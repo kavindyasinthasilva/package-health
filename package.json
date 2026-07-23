@@ -1,0 +1,52 @@
+{
+  "name": "@kavindyasinthasilva/package-health",
+  "version": "1.0.0",
+  "description": "A fast, zero-config CLI that checks Node.js projects for dependency health issues.",
+  "keywords": [
+    "npm",
+    "dependencies",
+    "audit",
+    "health",
+    "cli",
+    "unused-dependencies",
+    "package-json"
+  ],
+  "license": "MIT",
+  "author": "Kavindu Yasinth Silva",
+  "type": "module",
+  "bin": {
+    "package-health": "src/cli.js"
+  },
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check src/cli.js && node --check src/index.js && node --check src/scanner.js",
+    "test": "node --test",
+    "prepublishOnly": "npm run check && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavindyasinthasilva/package-health.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kavindyasinthasilva/package-health/issues"
+  },
+  "homepage": "https://github.com/kavindyasinthasilva/package-health#readme"
+}
