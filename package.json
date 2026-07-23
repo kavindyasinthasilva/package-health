@@ -1,5 +1,5 @@
 {
-  "name": "@kavindu_yasintha_silva/package-health",
+  "name": "package-healthlike",
   "version": "1.0.0",
   "description": "A fast, zero-config CLI that checks Node.js projects for dependency health issues.",
   "keywords": [
