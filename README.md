@@ -14,13 +14,13 @@ A fast, zero-config CLI that checks Node.js projects for dependency health issue
 Run it without installing:
 
 ```bash
-npx @kavindyasinthasilva/package-health
+npx @kavindu_yasintha_silva/package-health
 ```
 
 Or install globally:
 
 ```bash
-npm install --global @kavindyasinthasilva/package-health
+npm install --global @kavindu_yasintha_silva/package-health
 package-health
 ```
 
@@ -56,7 +56,7 @@ The unused-dependency check is intentionally conservative and based on static im
 ## Programmatic API
 
 ```js
-import { checkPackageHealth } from "@kavindyasinthasilva/package-health";
+import { checkPackageHealth } from "@kavindu_yasintha_silva/package-health";
 
 const report = await checkPackageHealth(process.cwd(), {
   includeDev: true,
